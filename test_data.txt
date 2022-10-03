@@ -1,0 +1,9 @@
+curl -i -d "$BODY" localhost:4000/v1/info
+
+#Working
+BODY='{"name":"Osborn Collins", "occupation":"IT Consultant", "phone":"501-615-5123", "email":"oj.collins@hotmail.com", "country":"Belize", "address":"5470 K Street, Kings Park"}'
+
+#Wrong phone and email pattern
+BODY='{"name":"Osborn Collins", "occupation":"IT Consultant", "phone":"5016155123", "email":"oj.collins", "country":"Belize", "address":"5470 K Street, Kings Park"}'
+
+
