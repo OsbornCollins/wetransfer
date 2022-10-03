@@ -4,6 +4,7 @@ package main
 
 import (
 	"net/http"
+	
 
 	"wetransfer.OsbornCollins.net/internal/data"
 	"wetransfer.OsbornCollins.net/internal/validator"
@@ -25,7 +26,7 @@ func (app *application) showRandomStringHandler(w http.ResponseWriter, r *http.R
 	v := validator.New()
 
 	//Check the map to determine if there were any validation errors
-	if data.ValidateInt(v, tools); !v.Valid() {
+	if data.ValidateInt(v, tools); !v.Valid(){
 		app.failedValidationResponse(w, r, v.Errors)
 		return
 	}
