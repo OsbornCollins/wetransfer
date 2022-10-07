@@ -1,0 +1,10 @@
+
+.material-icons.md-100 { font-size: 500px; color:red; }
+
+div {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

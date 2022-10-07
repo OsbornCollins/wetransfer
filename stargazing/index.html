@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stargazing</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <!-- Our Elm Appliclation will render into this div-->
+        
+        <div id="main"></div>
+        <script src="stargazing.js"></script>
+        <script>
+            Elm.Stargazing.init({
+                node: document.getElementById("main")
+            });
+        </script>
+
+    </body>
+</html>
